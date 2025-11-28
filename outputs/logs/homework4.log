@@ -163,3 +163,16 @@
 2025-11-28 23:11:55 - regression_kernels - INFO - RBF Kernel                2.8419e-01  
 2025-11-28 23:11:55 - regression_kernels - INFO - Best method: Polynomial (deg 5) (MSE = 1.8155e-01)
 2025-11-28 23:11:55 - regression_kernels - INFO - Saved regression comparison to outputs/figures/regression_comparison.png
+2025-11-28 23:34:54 - monomial_ls_tsvd - INFO - --- (a) LS Solution ---
+2025-11-28 23:34:54 - monomial_ls_tsvd - INFO - a_LS = [1.01226382 0.85222614 0.83977259]
+2025-11-28 23:34:54 - monomial_ls_tsvd - INFO - Condition number κ(G) = 4.86e+02
+2025-11-28 23:34:54 - monomial_ls_tsvd - INFO - --- (b) TSVD Solution (R'=2) ---
+2025-11-28 23:34:54 - monomial_ls_tsvd - INFO - Singular values of A: [8.40549389 2.51909728 0.38125914]
+2025-11-28 23:34:54 - monomial_ls_tsvd - INFO - a_TSVD = [1.00012127 0.92119543 0.77331851]
+2025-11-28 23:34:54 - monomial_ls_tsvd - INFO - --- (c) Coefficient Norms ---
+2025-11-28 23:34:54 - monomial_ls_tsvd - INFO - ||a_LS||_2   = 1.5672
+2025-11-28 23:34:54 - monomial_ls_tsvd - INFO - ||a_TSVD||_2 = 1.5642
+2025-11-28 23:34:54 - monomial_ls_tsvd - INFO - Saved figure to outputs/figures/monomial_ls_tsvd.png
+2025-11-28 23:34:54 - monomial_ls_tsvd - INFO - --- (d) Residual Errors ---
+2025-11-28 23:34:54 - monomial_ls_tsvd - INFO - LS residual      = 0.039550
+2025-11-28 23:34:54 - monomial_ls_tsvd - INFO - TSVD residual    = 0.054028
