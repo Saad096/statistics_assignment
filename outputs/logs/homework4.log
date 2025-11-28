@@ -1,0 +1,165 @@
+2025-11-28 22:39:57 - monomial_ls_tsvd - INFO - --- (a) LS Solution ---
+2025-11-28 22:39:57 - monomial_ls_tsvd - INFO - a_LS = [1.01226382 0.85222614 0.83977259]
+2025-11-28 22:39:57 - monomial_ls_tsvd - INFO - Condition number κ(G) = 4.86e+02
+2025-11-28 22:39:57 - monomial_ls_tsvd - INFO - --- (b) TSVD Solution (R'=2) ---
+2025-11-28 22:39:57 - monomial_ls_tsvd - INFO - Singular values of A: [8.40549389 2.51909728 0.38125914]
+2025-11-28 22:39:57 - monomial_ls_tsvd - INFO - a_TSVD = [1.00012127 0.92119543 0.77331851]
+2025-11-28 22:39:57 - monomial_ls_tsvd - INFO - --- (c) Coefficient Norms ---
+2025-11-28 22:39:57 - monomial_ls_tsvd - INFO - ||a_LS||_2   = 1.5672
+2025-11-28 22:39:57 - monomial_ls_tsvd - INFO - ||a_TSVD||_2 = 1.5642
+2025-11-28 22:39:58 - monomial_ls_tsvd - INFO - Saved figure to outputs/figures/monomial_ls_tsvd.png
+2025-11-28 22:39:58 - monomial_ls_tsvd - INFO - --- (d) Residual Errors ---
+2025-11-28 22:39:58 - monomial_ls_tsvd - INFO - LS residual      = 0.039550
+2025-11-28 22:39:58 - monomial_ls_tsvd - INFO - TSVD residual    = 0.054028
+2025-11-28 22:40:49 - tls_experiments - INFO - ==================================================
+2025-11-28 22:40:49 - tls_experiments - INFO - EXPERIMENT 1: Noise only in y (x is clean)
+2025-11-28 22:40:49 - tls_experiments - INFO - ==================================================
+2025-11-28 22:40:49 - tls_experiments - INFO - True theta:   2.5000
+2025-11-28 22:40:49 - tls_experiments - INFO - OLS estimate: 2.4455 (error = 0.0545)
+2025-11-28 22:40:49 - tls_experiments - INFO - TLS estimate: 2.4567 (error = 0.0433)
+2025-11-28 22:40:49 - tls_experiments - INFO - ==================================================
+2025-11-28 22:40:49 - tls_experiments - INFO - EXPERIMENT 2: Noise in both x and y
+2025-11-28 22:40:49 - tls_experiments - INFO - ==================================================
+2025-11-28 22:40:49 - tls_experiments - INFO - True theta:   2.5000
+2025-11-28 22:40:49 - tls_experiments - INFO - OLS estimate: 2.4226 (error = 0.0774)
+2025-11-28 22:40:49 - tls_experiments - INFO - TLS estimate: 2.5105 (error = 0.0105)
+2025-11-28 22:40:50 - tls_experiments - INFO - Saved figure to outputs/figures/tls_experiments.png
+2025-11-28 22:41:59 - pca_analysis - INFO - ============================================================
+2025-11-28 22:41:59 - pca_analysis - INFO - PCA Step-by-Step: Geometry, Decorrelation, Compression
+2025-11-28 22:41:59 - pca_analysis - INFO - ============================================================
+2025-11-28 22:41:59 - pca_analysis - INFO - Image shape: (16, 16), Total values: 256
+2025-11-28 22:41:59 - pca_analysis - INFO - ---- (a) Geometric Transformation ----
+2025-11-28 22:41:59 - pca_analysis - INFO - First principal component v1: [ 0.00000000e+00 -2.22044605e-16  0.00000000e+00  6.93889390e-18
+  3.84609246e-01  3.84609246e-01  4.25722734e-01  4.25722734e-01
+  4.63018339e-01  3.56771329e-01  0.00000000e+00  0.00000000e+00
+  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00]
+2025-11-28 22:42:00 - pca_analysis - INFO - Saved PCA step figure to outputs/figures/pca_steps.png
+2025-11-28 22:42:00 - pca_analysis - INFO - ---- (b) Statistical Decorrelation ----
+2025-11-28 22:42:00 - pca_analysis - INFO - Off-diagonal energy: Original = 30695.07, PCA = 0.00e+00
+2025-11-28 22:42:00 - pca_analysis - INFO - Saved covariance heatmaps to outputs/figures/pca_covariance_heatmaps.png
+2025-11-28 22:42:00 - pca_analysis - INFO - ---- (c) Dimensionality Reduction (SVD) ----
+2025-11-28 22:42:00 - pca_analysis - INFO - k= 1 | Frobenius error = 603.07
+2025-11-28 22:42:00 - pca_analysis - INFO - k= 3 | Frobenius error = 154.65
+2025-11-28 22:42:00 - pca_analysis - INFO - k= 5 | Frobenius error =   0.00
+2025-11-28 22:42:00 - pca_analysis - INFO - k=10 | Frobenius error =   0.00
+2025-11-28 22:42:00 - pca_analysis - INFO - k=16 | Frobenius error =   0.00
+2025-11-28 22:42:00 - pca_analysis - INFO - Storage: Original=256, k=3 uses 67 → 3.8× compression
+2025-11-28 22:42:00 - pca_analysis - INFO - Saved variance curve to outputs/figures/pca_variance_curve.png
+2025-11-28 22:42:00 - pca_analysis - INFO - ---- (d) Covariance Method vs SVD (k=3) ----
+2025-11-28 22:42:00 - pca_analysis - INFO - SVD error (k=3):     154.654226
+2025-11-28 22:42:00 - pca_analysis - INFO - Covariance error:    154.654226
+2025-11-28 22:42:00 - pca_analysis - INFO - Reconstruction diff: 9.86e-13
+2025-11-28 22:42:55 - regression_kernels - INFO - ============================================================
+2025-11-28 22:42:55 - regression_kernels - INFO - REGRESSION COMPARISON: Explicit vs. Kernel Methods
+2025-11-28 22:42:55 - regression_kernels - INFO - ============================================================
+2025-11-28 22:42:55 - regression_kernels - INFO - True function: y = 2*sin(2x) + 0.5*x^3
+2025-11-28 22:42:55 - regression_kernels - INFO - Samples: 50, Noise std: 0.5
+2025-11-28 22:42:55 - regression_kernels - INFO - ============================================================
+2025-11-28 22:42:55 - regression_kernels - INFO - MEAN SQUARED ERROR (MSE) vs. TRUE FUNCTION
+2025-11-28 22:42:55 - regression_kernels - INFO - ============================================================
+2025-11-28 22:42:55 - regression_kernels - INFO - Method                    MSE         
+2025-11-28 22:42:55 - regression_kernels - INFO - ------------------------------------------------------------
+2025-11-28 22:42:55 - regression_kernels - INFO - Linear OLS                3.6367e+00  
+2025-11-28 22:42:55 - regression_kernels - INFO - Gramian (Linear)          3.6372e+00  
+2025-11-28 22:42:55 - regression_kernels - INFO - Polynomial (deg 5)        1.8155e-01  
+2025-11-28 22:42:55 - regression_kernels - INFO - RBF Kernel                2.8419e-01  
+2025-11-28 22:42:55 - regression_kernels - INFO - Best method: Polynomial (deg 5) (MSE = 1.8155e-01)
+2025-11-28 22:44:32 - regression_kernels - INFO - ============================================================
+2025-11-28 22:44:32 - regression_kernels - INFO - REGRESSION COMPARISON: Explicit vs. Kernel Methods
+2025-11-28 22:44:32 - regression_kernels - INFO - ============================================================
+2025-11-28 22:44:32 - regression_kernels - INFO - True function: y = 2*sin(2x) + 0.5*x^3
+2025-11-28 22:44:32 - regression_kernels - INFO - Samples: 50, Noise std: 0.5
+2025-11-28 22:44:32 - regression_kernels - INFO - ============================================================
+2025-11-28 22:44:32 - regression_kernels - INFO - MEAN SQUARED ERROR (MSE) vs. TRUE FUNCTION
+2025-11-28 22:44:32 - regression_kernels - INFO - ============================================================
+2025-11-28 22:44:32 - regression_kernels - INFO - Method                    MSE         
+2025-11-28 22:44:32 - regression_kernels - INFO - ------------------------------------------------------------
+2025-11-28 22:44:32 - regression_kernels - INFO - Linear OLS                3.6367e+00  
+2025-11-28 22:44:32 - regression_kernels - INFO - Gramian (Linear)          3.6372e+00  
+2025-11-28 22:44:32 - regression_kernels - INFO - Polynomial (deg 5)        1.8155e-01  
+2025-11-28 22:44:32 - regression_kernels - INFO - RBF Kernel                2.8419e-01  
+2025-11-28 22:44:32 - regression_kernels - INFO - Best method: Polynomial (deg 5) (MSE = 1.8155e-01)
+2025-11-28 22:44:33 - regression_kernels - INFO - Saved regression comparison to outputs/figures/regression_comparison.png
+2025-11-28 22:44:54 - regression_kernels - INFO - ============================================================
+2025-11-28 22:44:54 - regression_kernels - INFO - REGRESSION COMPARISON: Explicit vs. Kernel Methods
+2025-11-28 22:44:54 - regression_kernels - INFO - ============================================================
+2025-11-28 22:44:54 - regression_kernels - INFO - True function: y = 2*sin(2x) + 0.5*x^3
+2025-11-28 22:44:54 - regression_kernels - INFO - Samples: 50, Noise std: 0.5
+2025-11-28 22:44:54 - regression_kernels - INFO - ============================================================
+2025-11-28 22:44:54 - regression_kernels - INFO - MEAN SQUARED ERROR (MSE) vs. TRUE FUNCTION
+2025-11-28 22:44:54 - regression_kernels - INFO - ============================================================
+2025-11-28 22:44:54 - regression_kernels - INFO - Method                    MSE         
+2025-11-28 22:44:54 - regression_kernels - INFO - ------------------------------------------------------------
+2025-11-28 22:44:54 - regression_kernels - INFO - Linear OLS                3.6367e+00  
+2025-11-28 22:44:54 - regression_kernels - INFO - Gramian (Linear)          3.6372e+00  
+2025-11-28 22:44:54 - regression_kernels - INFO - Polynomial (deg 5)        1.8155e-01  
+2025-11-28 22:44:54 - regression_kernels - INFO - RBF Kernel                2.8419e-01  
+2025-11-28 22:44:54 - regression_kernels - INFO - Best method: Polynomial (deg 5) (MSE = 1.8155e-01)
+2025-11-28 22:44:54 - regression_kernels - INFO - Saved regression comparison to outputs/figures/regression_comparison.png
+2025-11-28 23:10:38 - monomial_ls_tsvd - INFO - --- (a) LS Solution ---
+2025-11-28 23:10:38 - monomial_ls_tsvd - INFO - a_LS = [1.01226382 0.85222614 0.83977259]
+2025-11-28 23:10:38 - monomial_ls_tsvd - INFO - Condition number κ(G) = 4.86e+02
+2025-11-28 23:10:38 - monomial_ls_tsvd - INFO - --- (b) TSVD Solution (R'=2) ---
+2025-11-28 23:10:38 - monomial_ls_tsvd - INFO - Singular values of A: [8.40549389 2.51909728 0.38125914]
+2025-11-28 23:10:38 - monomial_ls_tsvd - INFO - a_TSVD = [1.00012127 0.92119543 0.77331851]
+2025-11-28 23:10:38 - monomial_ls_tsvd - INFO - --- (c) Coefficient Norms ---
+2025-11-28 23:10:38 - monomial_ls_tsvd - INFO - ||a_LS||_2   = 1.5672
+2025-11-28 23:10:38 - monomial_ls_tsvd - INFO - ||a_TSVD||_2 = 1.5642
+2025-11-28 23:10:38 - monomial_ls_tsvd - INFO - Saved figure to outputs/figures/monomial_ls_tsvd.png
+2025-11-28 23:10:38 - monomial_ls_tsvd - INFO - --- (d) Residual Errors ---
+2025-11-28 23:10:38 - monomial_ls_tsvd - INFO - LS residual      = 0.039550
+2025-11-28 23:10:38 - monomial_ls_tsvd - INFO - TSVD residual    = 0.054028
+2025-11-28 23:11:03 - tls_experiments - INFO - ==================================================
+2025-11-28 23:11:03 - tls_experiments - INFO - EXPERIMENT 1: Noise only in y (x is clean)
+2025-11-28 23:11:04 - tls_experiments - INFO - ==================================================
+2025-11-28 23:11:04 - tls_experiments - INFO - True theta:   2.5000
+2025-11-28 23:11:04 - tls_experiments - INFO - OLS estimate: 2.4455 (error = 0.0545)
+2025-11-28 23:11:04 - tls_experiments - INFO - TLS estimate: 2.4567 (error = 0.0433)
+2025-11-28 23:11:04 - tls_experiments - INFO - ==================================================
+2025-11-28 23:11:04 - tls_experiments - INFO - EXPERIMENT 2: Noise in both x and y
+2025-11-28 23:11:04 - tls_experiments - INFO - ==================================================
+2025-11-28 23:11:04 - tls_experiments - INFO - True theta:   2.5000
+2025-11-28 23:11:04 - tls_experiments - INFO - OLS estimate: 2.4226 (error = 0.0774)
+2025-11-28 23:11:04 - tls_experiments - INFO - TLS estimate: 2.5105 (error = 0.0105)
+2025-11-28 23:11:04 - tls_experiments - INFO - Saved figure to outputs/figures/tls_experiments.png
+2025-11-28 23:11:29 - pca_analysis - INFO - ============================================================
+2025-11-28 23:11:29 - pca_analysis - INFO - PCA Step-by-Step: Geometry, Decorrelation, Compression
+2025-11-28 23:11:29 - pca_analysis - INFO - ============================================================
+2025-11-28 23:11:29 - pca_analysis - INFO - Image shape: (16, 16), Total values: 256
+2025-11-28 23:11:29 - pca_analysis - INFO - ---- (a) Geometric Transformation ----
+2025-11-28 23:11:29 - pca_analysis - INFO - First principal component v1: [ 0.00000000e+00 -2.22044605e-16  0.00000000e+00  6.93889390e-18
+  3.84609246e-01  3.84609246e-01  4.25722734e-01  4.25722734e-01
+  4.63018339e-01  3.56771329e-01  0.00000000e+00  0.00000000e+00
+  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00]
+2025-11-28 23:11:29 - pca_analysis - INFO - Saved PCA step figure to outputs/figures/pca_steps.png
+2025-11-28 23:11:29 - pca_analysis - INFO - ---- (b) Statistical Decorrelation ----
+2025-11-28 23:11:29 - pca_analysis - INFO - Off-diagonal energy: Original = 30695.07, PCA = 0.00e+00
+2025-11-28 23:11:30 - pca_analysis - INFO - Saved covariance heatmaps to outputs/figures/pca_covariance_heatmaps.png
+2025-11-28 23:11:30 - pca_analysis - INFO - ---- (c) Dimensionality Reduction (SVD) ----
+2025-11-28 23:11:30 - pca_analysis - INFO - k= 1 | Frobenius error = 603.07
+2025-11-28 23:11:30 - pca_analysis - INFO - k= 3 | Frobenius error = 154.65
+2025-11-28 23:11:30 - pca_analysis - INFO - k= 5 | Frobenius error =   0.00
+2025-11-28 23:11:30 - pca_analysis - INFO - k=10 | Frobenius error =   0.00
+2025-11-28 23:11:30 - pca_analysis - INFO - k=16 | Frobenius error =   0.00
+2025-11-28 23:11:30 - pca_analysis - INFO - Storage: Original=256, k=3 uses 67 → 3.8× compression
+2025-11-28 23:11:30 - pca_analysis - INFO - Saved variance curve to outputs/figures/pca_variance_curve.png
+2025-11-28 23:11:30 - pca_analysis - INFO - ---- (d) Covariance Method vs SVD (k=3) ----
+2025-11-28 23:11:30 - pca_analysis - INFO - SVD error (k=3):     154.654226
+2025-11-28 23:11:30 - pca_analysis - INFO - Covariance error:    154.654226
+2025-11-28 23:11:30 - pca_analysis - INFO - Reconstruction diff: 9.86e-13
+2025-11-28 23:11:55 - regression_kernels - INFO - ============================================================
+2025-11-28 23:11:55 - regression_kernels - INFO - REGRESSION COMPARISON: Explicit vs. Kernel Methods
+2025-11-28 23:11:55 - regression_kernels - INFO - ============================================================
+2025-11-28 23:11:55 - regression_kernels - INFO - True function: y = 2*sin(2x) + 0.5*x^3
+2025-11-28 23:11:55 - regression_kernels - INFO - Samples: 50, Noise std: 0.5
+2025-11-28 23:11:55 - regression_kernels - INFO - ============================================================
+2025-11-28 23:11:55 - regression_kernels - INFO - MEAN SQUARED ERROR (MSE) vs. TRUE FUNCTION
+2025-11-28 23:11:55 - regression_kernels - INFO - ============================================================
+2025-11-28 23:11:55 - regression_kernels - INFO - Method                    MSE         
+2025-11-28 23:11:55 - regression_kernels - INFO - ------------------------------------------------------------
+2025-11-28 23:11:55 - regression_kernels - INFO - Linear OLS                3.6367e+00  
+2025-11-28 23:11:55 - regression_kernels - INFO - Gramian (Linear)          3.6372e+00  
+2025-11-28 23:11:55 - regression_kernels - INFO - Polynomial (deg 5)        1.8155e-01  
+2025-11-28 23:11:55 - regression_kernels - INFO - RBF Kernel                2.8419e-01  
+2025-11-28 23:11:55 - regression_kernels - INFO - Best method: Polynomial (deg 5) (MSE = 1.8155e-01)
+2025-11-28 23:11:55 - regression_kernels - INFO - Saved regression comparison to outputs/figures/regression_comparison.png
